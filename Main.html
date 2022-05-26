@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ryan Garrett</title>
+    <link rel="icon" type="image/x-icon" href="./Assets/Images/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="./Assets/Styles/Structure.css" />
+
+    <script src="./Assets/JS/header-link-scroll.js"></script> 
+    <script src="https://kit.fontawesome.com/e47ca0610a.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Intro card -->
+
+    <div id="intro-card" class="intro-card">
+      <div class="intro-card-image-container">
+        <div class="intro-card-padding">
+          <div class="image-container">
+            <img class="profile-image" src="./Assets/Images/me.jpg" alt="Ryan Garrett">
+          </div>
+        </div>
+      </div>
+      <div class="intro-card-content-container">
+        <div class="intro-card-padding">
+          <div class="content-container">
+            <p class="intro-card-text">
+              Hi, I’m Ryan Garrett and welcome to my Portfolio! I’m a frontend developer with 10 years of experience that also finds it fun to get involved with UX/UI design. Here you can 
+              find more <a href="#about-me" class="text-link">about me</a>, information about my past work in <a href="#case-studies" class="text-link">case studies</a>, the different 
+              <a href="#skills" class="text-link">skills</a> I have, and my <a href="#contact" class="text-link">contact information</a>.
+            </p>
+            <!-- <span class="icon">
+              <a href="https://www.linkedin.com/in/ryan-garrett-a18a7996/" target="_blank"><i class="fa-brands fa-linkedin"></i><span>Ryans linkedin page (opens in new tab)</span></a>
+            </span>
+            <span class="icon">
+              <a href="https://www.instagram.com/rgarr96/" target="_blank"><i class="fa-brands fa-instagram"></i><span>Ryans instagram page (opens in new tab)</span></a>
+            </span>
+            <span class="icon">
+              <a href="mailto: ryangarrettwork@gmail.com"><i class="fa-solid fa-envelope"></i><span>Ryans email (opens email popup)</span></a>
+            </span> -->
+            <div class="intro-card-scroll-container">
+              <p class="intro-card-scroll-text">Scroll down to explore</p>
+              <span style="font-size: 2em; color: #fff;">
+                <i class="fa-solid fa-arrow-down fa-bounce"  style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; "></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div id="intro-card" class="intro-card-background">
+      <div class="intro-card-padding">
+        <div class="intro-card">
+          <div class="intro-card-content-1">
+            <img class="profile-image" src="./Assets/Images/me.jpg" alt="Ryan Garrett">
+            <p class="intro-card-text">
+              Hi, I’m Ryan Garrett and welcome to my Portfolio! I’m a frontend developer with 10 years of experience that also finds it fun to get involved with UX/UI design. Here you can 
+              find more <a href="#about-me" class="text-link">about me</a>, information about my past work in <a href="#case-studies" class="text-link">case studies</a>, the different 
+              <a href="#skills" class="text-link">skills</a> I have, and my <a href="#contact" class="text-link">contact information</a>.
+            </p>
+          </div>
+          <hr class="section-break" />
+          <div class="intro-card-content-2">
+            <span class="icon">
+              <a href="https://www.linkedin.com/in/ryan-garrett-a18a7996/" target="_blank"><i class="fa-brands fa-linkedin"></i><span>Ryans linkedin page (opens in new tab)</span></a>
+            </span>
+            <span class="icon">
+              <a href="https://www.instagram.com/rgarr96/" target="_blank"><i class="fa-brands fa-instagram"></i><span>Ryans instagram page (opens in new tab)</span></a>
+            </span>
+            <span class="icon">
+              <a href="mailto: ryangarrettwork@gmail.com"><i class="fa-solid fa-envelope"></i><span>Ryans email (opens email popup)</span></a>
+            </span>
+          </div>
+        </div>
+
+        <div class="intro-card-scroll-container">
+          <p class="intro-card-scroll-text">Scroll down to explore</p>
+          <span style="font-size: 2em; color: #fff;">
+            <i class="fa-solid fa-arrow-down fa-bounce"  style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; "></i>
+          </span>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Navigation -->
+    <header class="header" role="banner" data-module="govuk-header">
+      <div class="header-container">
+        <span class="header-link-group">
+          <a href="#about-me" class="header-link">About me</a>
+          <a href="#case-studies" class="header-link">Case studies</a>
+        </span>
+        <span class="header-link-group-icon">
+          <a href="#intro-card" class="header-logo-link">
+            <img src="./Assets/Images/Logo.png" class="header-logo" alt="Link to about me section">
+          </a>
+        </span>
+        <span class="header-link-group">
+          <a href="#skills" class="header-link">Skills</a>
+          <a id="last-nav" href="#contact" class="header-link">Contact</a>
+        </span>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <div class="main-content">
+      <section class="section" id="about-me">
+        <h1 class="visually-hidden">About me</h1>
+
+        <h2 class="heading--medium">Background</h2>
+        <p class="text">
+          Born and raised in Newcastle! From a very young age at school I pick up a lot of interest in IT as a subject and instantly knew that's what I wanted to focus on learning on.
+          Many years later after learning the basics of IT at school, I joined the <span class="text-bold">Accenture Apprenticeship program</span> to persue a life in IT and to expand 
+          my skills. This was a great opportunity for me to learn on the Job while getting the chance to obtain more qualifications such as an <span class="text-bold">NVQ</span> & a 
+          degree at Sunderland University, where I achieved a <span class="text-bold">1st Class in BSc Digital Technology Solution’s & Software Engineering</span>. Some other key 
+          highlights of my working careers is getting the chance to become scrum master certified and winning <span class="text-bold">Accenture Newcastle Apprentice of the Year 2016</span>.
+        </p>
+        <h2 class="heading--medium">Experiance</h2>
+        <dl class="summary-list">
+          <div class="summary-row">
+            <dt class="summary-heading">
+              Accenture (8 Years)
+            </dt>
+            <dd class="summary-description">
+              I joined Accenture through their Apprenticeship program where I gained a large amount of project methodology and client interaction experience, from working in both 
+              local and distributed agile & waterfall teams. Working at accenture I have gained a vast amount of problem-solving experience, which includes analysing and 
+              deconstructing complex requirements to create and deliver solutions. Utilising relevant techniques and methodologies to support and execute the design, build, and 
+              maintenance of applications and assets. I've mainly been a frontend developer over these years working with languages such as HTML, CSS, Javascript, SCSS and Vue.js. 
+              However during my 8 years here I have experianced working different areas such as a functional tester, scrum master and an Atlassian admin.
+            </dd>
+          </div>
+          <div class="summary-row">
+            <dt class="summary-heading">
+              University (3 Years)
+            </dt>
+            <dd class="summary-description">
+              As part of the Accenture Apprenticeship program I went to Sunderland University during my time at Accenture to study Digital Technology Solution’s & Software Engineering. 
+              This course allowed me to get experience and develop my software skills such as web development, cyber security, networking and software design. For example some of my 
+              main assignments had me working with HTML, CSS, Javascript, PHP, Java & Adobe XD to build digital solutions for the given assignment briefs. My final dissertation was an 
+              investigation into how web mobile impacts people with disablities and how to build a fully accessible responsive website. My inital finds were when responsive websites 
+              were done inncorrectly, this had a negitive experience when people with accessibility needs used it. This lead to me building a responsive online comic/book store where 
+              people could trade their comics and books with other users. This was built in Vue.js/SCSS and met the Web Content Accessibility Guidelines (WCAG) 2.1 requirements. 
+              To help show my findings, I user tested it with people with accessibility needs where it recieved positive feedback. Through hard work I finished university with a 
+              first Class (1st).
+            </dd>
+          </div>
+          <div class="summary-row">
+            <dt class="summary-heading">
+              A-Levels (2 Years)
+            </dt>
+            <dd class="summary-description">
+              This was the start of my path to a career in IT. It was here where I took IT as a subject at A-Levels which showed me how to build wireframes off requirements, 
+              develop websites in Dreamweaver, use the command line, build PC's and load software onto them. It also taught me the basics of how to use excel, write emails and 
+              documents.
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="section" id="case-studies">
+        <h1 class="heading--large">Case Studies</h1>
+        <!-- Case study navigation -->
+        <ul class="numbered-list">
+          <li>
+            <a class="text-link" href="#case-studies">Upgraded multiple services & fixed their accessibility issues</a>
+          </li>
+          <li>
+            <a class="text-link" href="#case-study-2">Helped develop service prototypes</a>
+          </li>
+          <li>
+            <a class="text-link" href="#case-study-3">Lead frontend developer on a new HMRC catalog service</a>
+          </li>
+          <li>
+            <a class="text-link" href="#case-study-4">Frontend developer one of the main Eat Out to Help Out services</a>
+          </li>
+        </ul>
+        <!-- Case Study 1 -->
+        <h2 class="heading--medium" id="case-study-1">Upgraded multiple services & fixed their accessibility issues</h2>
+        <p class="text">
+          I was brought onto a HMRC team that had their complete service accessibility tested and failed to meet standards. This was a big service made up of around 8 repositories 
+          that all used the old frontend libraries. The frontend code its self was written by backend developers with no experience in frontend development, they had used the 
+          old frontend library as guidance. I made a case to the design lead and project manager that the services needed to be upgraded to the latest Government Digital Service 
+          (GDS) Design System components in order to be more accessibile. Orginally there was push back from the design team since the upgrade meant visual changes. However I convinced 
+          them it was for the greater good as the newer components had been designed with accessibility in mind unlike the older ones. Teaching them how the likes of screen readers work
+          and how switching to the new frontend library would benefit these and overall improve the user experiance.
+        </p>
+        <p class="text">
+          I was given the task to upgrade all the repositories and to do a complete rebuild using the new frontend libraries. While doing this I would need to assess any 
+          accessibility failures that needed addressing before the services went for a retest. One of the challenges I was facing was multple developers were working in these 
+          repositories which meant I had to keep constant communications with the other developers about what was being worked on. If I failed to do this then it would lead to 
+          many conflicts as I was rewritting the frontend pages.
+        </p>
+        <p class="text">
+          I started off by breaking the repositories into phases to make it easier for code reviews, more feasible to comunicate what sections were being working on and to 
+          make it manage-able for our tester to test the upgrades. In each phase I upgraded the project to use the new frontend libraries, re-wrote the code to use the new components, 
+          cleaned the frontend code and ensured each page met the WCAG requirements. During this process I worked closely with the lead designer as there was slight differances in 
+          visuals between the old frontend library and the new. Additionally there were cases where the old components were bad for user experience so I raised these issues with 
+          the lead designer and worked along side them to improve them using the newer GDS Design System components. Once each phase was complete, I set up meetings with the lead 
+          designer, product manager and tester to demo the new upgraded screens with the purpose of gathering feedback. Once the screens were signed off, the phases were sent to the 
+          tester where I made sure I was available for any questions they had. During each phase I was always planning in advance about what I was upgrading in the next phase. Making 
+          sure I was communicating this information using our dev channels and sprint plannings.
+        </p>
+        <img src="./Assets/Images/developer-hub.png" class="developer-hub-image" alt="Picture of Ryan Garrett">
+        <p class="text">
+          The team have just started sending the repositories for a retest with the accessibility teams. The smallers repositories were sent first where they are successfully 
+          passing the accessiblity tests and the new-ish look is getting positive feedback across the board.
+        </p>
+
+        <fieldset class="user-feedback-box">
+          <legend class="user-feedback-legend">User Feedback - Backend developer</legend> 
+          <p>
+            "Over the last five months Ryan has been fantastic. He has been the driving force of our frontend. Not only he has proved to collaborate well 
+            within a pair programming environment but has also proven to countless times to deliver at pace on his own. Ryan shows drive and commitment daily by continuously 
+            striving to add value to the project, he understands the vision and culture of HMRC integrating well with the environment and atmosphere. Personally, I am more 
+            geared to backend work therefore my frontend skills tend to be more limited. Working with Ryan has increased my skills within the frontend domain, he has shown 
+            me how to perform changes, upgrades and improvements as well as taking the time to explain why certain technical aspects required. Thus widening my knowledge and 
+            making me a better developer. Without failure he takes initiative to drive tickets and tests the waters in the scala language. I can without a doubt say he is 
+            a fantastic listener and very sharp. Daily we pair together and come across hordes of scala code. Every day I explain new concepts to him and the reasoning to 
+            various in-depth scala code, I'm quite jealous he understands it faster than I did when I started off. Absolute pleasure to have on the team. To improve, 
+            from where I am standing, is to keep the same high standard daily as its very difficult to stay at the top it’s been reached."
+          </p>
+        </fieldset>
+
+        <hr id="case-study-2" class="section-break--large" />
+
+        <!-- Case Study 2 -->
+        <h2 class="heading--medium">Helped develop service prototypes</h2>
+        <p class="text">
+          Since we were moving the services from the old frontend libraries to the newer frontend, I noticed all the UI prototypes were using the old frontend components 
+          and not the new ones. I raised this as an issue as in the upgraded frontend there are slight visual differances with the newer components compared to the old. This could 
+          have caused issues say when user testing, it wouldn't have provided accurate feedback for our newer upgraded services. It could also lead to confusion when demo'ing to 
+          the developers on how the design team want pages to be presented, compared to what would actually be produced on the newer upgraded frontend.
+        </p>
+        <p class="text">
+          After raising this issue, I was instructed to replicate the old prototypes in a new repository with the latest Government Digital Service (GDS) Design System components. 
+          This all had to be complete before the next round of user testing as the design team wanted to use the new screens to get more accurate feedback. I also had the additional 
+          task of upskilling a HMRC apprentice in frontend.
+        </p>
+        <div class="side-by-side">
+          <div class="side-by-side-image">
+            <img src="./Assets/Images/wave-screenshot.png" class="wave-image" alt="Results of a WAVE accessibility test, showing no errors">
+          </div>
+          <div class="side-by-side-text">
+            <p class="text">
+              With deadlines in mind, I delegated the work out between me and the apprentice. We started off pair programming so that I could teach them how to write correct 
+              HTML, CSS & JS that met coding standards. Once they picked up suitable knowledge, we split off to work on our own screens so that we were working efficantly 
+              to meet the deadline. On some of the screens that were assigned to me, there were a couple of complicated components to recreate which I had to combine a 
+              mixture of the GDS Design System components while keeping it fully accessible. I set up regular code reviews and demo's to give constant feedback to the apprentice that 
+              helped them learn and grow in the frontend world. This allowed them to pick up more difficult tasks that also helped the work load on me. Since the prototypes could be a 
+              source for the backend developers to copy frontend code from, I wanted to make sure the prototype was fully accessibile too. To do this I set up a meeting with the 
+              apprentice/Lead designer and taught them how to use tools like WAVE to test their code in browser.
+            </p>
+          </div>
+        </div>
+
+        <p class="text">
+          Through teamwork and hard work we met the user testing deadlines and produced a high standard prototype that was demo'ed at the user testing sessions. This allowed 
+          the design team to get more detailed, authenic feedback that would allowed them to design and develop a service to meet the users needs.
+        </p>
+
+        <fieldset class="user-feedback-box">
+          <legend class="user-feedback-legend">User Feedback - Lead designer</legend> 
+          <p>
+            "Ryan is proactive in helping the team in a number of ways. His work with our prototypes has ensured we’ve been able to user test with more fully 
+            realised, functioning code. And this work has in turn assisted the developers working with the production code, helping reduce the time they need to spend to get 
+            new functionality out to users. Ryan’s my go-to with questions about accessibility and always comes back with sound advice or a solid coded solution. His recent work 
+            on one of our products was central to it successfully passing an accessibility audit. It makes a big difference to me and the team knowing we have Ryan to work with 
+            us on more complex coding and functionality."
+          </p>
+        </fieldset>
+
+        <hr id="case-study-3" class="section-break--large" />
+
+        <!-- Case Study 3 -->
+        <h2 class="heading--medium">Lead frontend developer on a new HMRC catalog service</h2>
+        <p class="text">
+          There was an ask for a new service to be built that cataloged API's for external and internal use. This was to hopefully improve peoples user journeys and make it easier for 
+          them to find API's. The service was to be designed and built from scratch.
+        </p>
+        <p class="text">
+          Being the frontend developer lead on this project, I was brought onto the project at the start to work along side the lead designer to help develop the prototype for the new 
+          service. When the prototypes were complete I was to develop the frontend for this service with the help of the backend developers. I would have to code review all the 
+          frontend work to guarantee accessibility and code standards were being met.
+        </p>
+        <p class="text">
+          To help maintain a fully accessible prototype that other developers could copy and use code from, I provided guidance to the lead designer in regular calls and 
+          review sessions. I found these sessions helpful for my own development as they would go away to learn more about WCAG/accessibility and then show me their findings 
+          through their work. It was important we got the prototype complete in a timely fashion as we needed to get it out in front of users testing sessions. To achieve this we set 
+          out to make re-useable components and CSS where we could. This also meant if there was a design change, we would only have to change it in 1 place. The new service was 
+          made up of custom components that had to be carefully built by me to ensure the accessiblity needs were still being met. Once the prototype was complete, I took 
+          to the task of making sure what we built in the prototype was being transitioned over into the actual service and helping the backend developers where I could.
+        </p>
+        <p class="text">
+          The end result was we delivered and released the new service that passed its scheled accessibility review with flying colours! The service also recieved good feedback from 
+          internal and external teams noting they found the service easier to find and locate API information.
+        </p>
+        <fieldset class="user-feedback-box">
+          <legend class="user-feedback-legend">User Feedback - Product manager</legend> 
+          <p>
+            “Ryan has been an integral part of the API Platform team for the last few months. He brings in extensive knowledge and valuable experience of 
+            frontend development to support critical areas such as accessibility and projects funded by SR20 budget.Ryan is a dedicated frontend developer who works collaboratively 
+            with Design and Development team to ensure the needs of our users are met. He has championed accessibility, working across teams by raising awareness and suggesting 
+            improvements. He has excellent soft skills and he works with his team to understand and solve problem. I can confidently say that Ryan has been a valuable asset 
+            to our team and we hope we can continue working with him in the future.”
+          </p>
+        </fieldset>
+
+        <hr id="case-study-4" class="section-break--large" />
+
+        <!-- Case Study 4 -->
+        <h2 class="heading--medium">Frontend developer one of the main Eat Out to Help Out services</h2>
+        <p class="text">
+          At the start of the pandemic there was a scheme set up by the government to try and get people to eat out at restaurants in order to boost their revenue during the tough 
+          financial time. This was called the Eat Out to Help Out Scheme. I joined one of the main teams as a frontend that was responsible for developing the search and results 
+          screens. At the point I joined, the designs had already been complete and development was about to begin.
+        </p>
+        <p class="text">
+          My job was to develop the screens that had been designed by the design team and to work along side the backend developers, tasked to hook up the backend and frontend. 
+          This was a fast pace project where we had weekly releases which meant we had to develop, test and deploy with tight deadlines while delivering high standard/accessible 
+          code. With it being a fast pace project, there were new requirements all the time where I had to priorities new features based on what was most useful for users such as 
+          a language switch for Welsh users.
+        </p>
+
+        <div class="side-by-side">
+          <div class="side-by-side-image">
+            <img src="./Assets/Images/eotho-webpage.png" class="eotho-image" alt="Eat Out to Help Out website on a tablet">
+          </div>
+          <div class="side-by-side-text">
+            <p class="text">
+              At the start of development I realised there wasn't any mobile designs and raised it as a high risk problem since it was going to be a public facing website where users 
+              were most likely going to be using a mobile phone. Here I took action to communicate with the designers while developing the frontend to make it fully responsive for 
+              all devices and browsers. I used the Government Digital Service (GDS) Design System components to develop the search page and the results page. I also volenteered 
+              to code review the other frontend sections of the service. When my tasks were complete I would work with the HMRC accessibility team to help spot and fix any issues 
+              we saw. I also took this oppertunity to learn more about accessibility, to advance my knowledge by listening to their guidance and methods of testing.
+            </p>
+          </div>
+        </div>
+
+        <p class="text">
+          The launch of Eat Out to Help Out scheme was a success and used by millions of members of british public where it got fantastic feedback. Each day it was used by over 
+          100 thousand users and we barely got any noted bugs which goes to show how solid the frontend and backend code was developed.
+        </p>
+
+      </section>
+      <section class="section" id="skills">
+        <h1 class="heading--large">Skills</h1>
+        <div class="skills-container">
+          <span class="text--large skill-box">
+            <img src="./Assets/Images/Atlassian.png" class="skills-icon" alt="Atlassian logo">
+            Atlassian
+          </span>
+          <span class="text--large skill-box">
+            <img src="./Assets/Images/html.png" class="skills-icon" alt="HTML logo">
+            HTML
+          </span>
+          <span class="text--large skill-box">
+            <img src="./Assets/Images/css.png" class="skills-icon" alt="CSS logo">
+            CSS
+          </span>
+          <span class="text--large skill-box">
+            <img src="./Assets/Images/sass.svg" class="skills-icon" alt="SASS logo">
+            SASS
+          </span>
+          <span class="text--large skill-box">
+            <img src="./Assets/Images/js.png" class="skills-icon" alt="Javascript logo">
+            Javascript
+          </span>
+          <span class="text--large skill-box">
+            <img src="./Assets/Images/xd.svg" class="skills-icon" alt="Adobe XD logo">
+            Adobe XD
+          </span>
+          <span class="text--large skill-box">
+            <img src="./Assets/Images/vegas-pro.png" class="skills-icon" alt="Vegas Pro logo">
+            Vegas Pro
+          </span>
+        </div>
+        <br />
+        <dl class="summary-list">
+          <div class="summary-row">
+            <dt class="summary-heading">
+              Atlassian
+            </dt>
+            <dd class="summary-description">
+              A tool used by agile development teams to track bugs, stories, epics, and other tasks. I was once an Atlassian admin so have experiance of how the set up works.
+            </dd>
+          </div>
+          <div class="summary-row">
+            <dt class="summary-heading">
+              HTML
+            </dt>
+            <dd class="summary-description">
+              Frontend language that is used to structure a web page and its content.
+            </dd>
+          </div>
+          <div class="summary-row">
+            <dt class="summary-heading">
+              CSS
+            </dt>
+            <dd class="summary-description">
+              Frontend language also known as Cascading Style Sheets (CSS) and is used to style webpages.
+            </dd>
+          </div>
+          <div class="summary-row">
+            <dt class="summary-heading">
+              SASS
+            </dt>
+            <dd class="summary-description">
+              Sass is a preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets. It enables you to use things like variables, nested rules, 
+              inline imports and more
+            </dd>
+          </div>
+          <div class="summary-row">
+            <dt class="summary-heading">
+              Javascript
+            </dt>
+            <dd class="summary-description">
+              Frontend language used to make webpages dynamic and interactive. There are many Javascript frameworks, a popular one I like to use is Vue.js.
+            </dd>
+          </div>
+          <div class="summary-row">
+            <dt class="summary-heading">
+              Adobe XD
+            </dt>
+            <dd class="summary-description">
+              Adobe XD is a user experience design tool to build out web sites and mobile apps.
+            </dd>
+          </div>
+          <div class="summary-row">
+            <dt class="summary-heading">
+              Vegas Pro
+            </dt>
+            <dd class="summary-description">
+              Vegas Pro is a video editing software tool that is used to cut together, edit and render videos.
+            </dd>
+          </div>
+        </dl>
+      </section>
+      <section class="section" id="contact">
+        <h1 class="heading--large">Contact details</h1>
+        <p class="text--extra-large">
+          Have a question? Feel free to send me an email.
+        </p>
+        <div class="email-box">
+          <span class="icon--small">
+            <i class="fa-solid fa-envelope"></i>
+          </span>
+          <a href="mailto: ryangarrettwork@gmail.com" class="text-link">ryangarrettwork@gmail.com</a>
+        </div>
+        <p class="text--extra-large">
+          Or you can find me on these social media pages:
+        </p>
+        <div>
+          <span class="icon">
+            <a href="https://www.linkedin.com/in/ryan-garrett-a18a7996/" target="_blank"><i class="fa-brands fa-linkedin"></i><span>Ryans LinkedIn page (opens in new tab)</span></a>
+          </span>
+          <span class="icon">
+            <a href="https://www.instagram.com/rgarr96/" target="_blank"><i class="fa-brands fa-instagram"></i><span>Ryans instagram page (opens in new tab)</span></a>
+          </span>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+    </footer>
+  </body>
+</html>
