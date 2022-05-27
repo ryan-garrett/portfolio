@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 1.9rem;
+  overflow-x:hidden;
 }
 
 body {
@@ -101,6 +102,32 @@ body {
 }
 
 /* Components */
+
+.star {
+  --twinkle-duration: "";
+  --twinkle-delay: "";
+  --star-size: "";
+  position: absolute;
+  width: var(--star-size);
+  height: var(--star-size);
+  border-radius: 50%;
+  animation: twinkle infinite alternate;
+  animation-duration: var(--twinkle-duration);
+  animation-delay: var(--twinkle-delay);
+  background: #000;
+  z-index: -1;
+}
+
+@keyframes twinkle {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.5);
+        box-shadow: 0 0 5px 0.5px rgba(150, 150, 150, 0.6);
+    }
+}
 
 .section-break {
   margin: 0;
@@ -474,6 +501,12 @@ body {
 
 .email-box a {
   margin-left: 10px;
+}
+
+/* Contact */
+
+#contact {
+  padding-bottom: 60px;
 }
 
 /* Footer */
