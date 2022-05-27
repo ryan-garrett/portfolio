@@ -42,8 +42,9 @@
     </div>
 
     <!-- Navigation -->
-    <header class="header" role="banner" data-module="govuk-header">
+    <header class="header" role="banner">
       <div class="header-container">
+        <span id="menu-button" class="header-menu-icon"><i class="fa-solid fa-bars"></i></span>
         <span class="header-link-group">
           <a href="#about-me" class="header-link">About me</a>
           <a href="#case-studies" class="header-link">Case studies</a>
@@ -57,6 +58,14 @@
           <a href="#skills" class="header-link">Skills</a>
           <a id="last-nav" href="#contact" class="header-link">Contact</a>
         </span>
+      </div>
+      <div id="drop-down" class="header-menu-dropdown">
+        <ul class="header-menu-dropdown-list">
+          <li class="header-menu-dropdown-item"><a href="#about-me" class="header-link">About me</a></li>
+          <li class="header-menu-dropdown-item"><a href="#case-studies" class="header-link">Case studies</a></li>
+          <li class="header-menu-dropdown-item"><a href="#skills" class="header-link">Skills</a></li>
+          <li class="header-menu-dropdown-item"><a id="last-nav" href="#contact" class="header-link">Contact</a></li>
+        </ul>
       </div>
     </header>
 

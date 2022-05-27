@@ -7,7 +7,7 @@ html {
 body {
   background-color: #fff;
   margin: 0;
-  font-family: "GDS Transport",arial,sans-serif;
+  font-family: arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -63,13 +63,9 @@ body {
 }
 
 .text-link {
-  font-family: "GDS Transport",arial,sans-serif;
+  font-family: arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-decoration: underline;
-    text-decoration-thickness: auto;
-  text-decoration-thickness: max(1px, .0625rem);
-  text-underline-offset: .1em;
 }
 
 .text-link:link {
@@ -101,6 +97,10 @@ body {
   display: none;
 }
 
+.active {
+  display: block !important;
+}
+
 /* Components */
 
 .star {
@@ -119,14 +119,14 @@ body {
 }
 
 @keyframes twinkle {
-    from {
-        transform: scale(1);
-    }
+  from {
+    transform: scale(1);
+  }
 
-    to {
-        transform: scale(1.5);
-        box-shadow: 0 0 5px 0.5px rgba(150, 150, 150, 0.6);
-    }
+  to {
+    transform: scale(1.5);
+    box-shadow: 0 0 5px 0.5px rgba(150, 150, 150, 0.6);
+  }
 }
 
 .section-break {
@@ -188,7 +188,7 @@ body {
 }
 
 .numbered-list {
-  font-family: "GDS Transport",arial,sans-serif;
+  font-family: arial,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
@@ -216,6 +216,7 @@ body {
   color: #fff;
   background: #0b0c0c;
   padding: 10px 0;
+  height: 50px;
 }
 
 .header-container {
@@ -256,6 +257,35 @@ body {
 
 .header-logo {
   height: 50px;
+}
+
+.header-menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.header-menu-dropdown {
+  display: none;
+  background-color: #0b0c0c;
+}
+
+.header-menu-dropdown-list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.header-menu-dropdown-item {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+  border-bottom: 1px solid #FF7400;
+}
+
+.header-menu-dropdown-item:last-child {
+  border-bottom: none;
 }
 
 /* Main content containers */
@@ -374,73 +404,6 @@ body {
   font-weight: 400;
 }
 
-/* .intro-card-background {
-  display: flex;
-  height: 100vh;
-  background: 
-	linear-gradient(0deg, rgba(11,12,12,1), rgba(0,0,0,0.80));
-}
-
-.intro-card-padding {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  max-width: 960px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.intro-card {
-  display: flex;
-  flex-direction: column;
-}
-
-.intro-card-content-1 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.intro-card-content-2 {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.profile-image {
-  min-width: 200px;
-  height: 250px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: 50% 38%;
-  border: 5px #000 solid;
-  background: black;
-}
-
-.intro-card-text {
-  padding: 0 30px;
-  color: #fff;
-  margin-bottom: 20px;
-  font-size: 2rem;
-  line-height: 1.2;
-  font-weight: 400;
-}
-
-.intro-card-scroll-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.intro-card-scroll-text {
-  padding: 0 30px 20px 30px;
-  color: #fff;
-  margin: 0;
-  font-size: 19px;
-  line-height: 1.2;
-  font-weight: 400;
-} */
-
 /* Case studies */
 
 .developer-hub-image {
@@ -517,4 +480,158 @@ footer {
   background: #0b0c0c;
   color: #fff;
   font-weight: 700;
+}
+
+/* Smaller screens */
+
+@media (max-width: 1000px) {
+  html {
+    scroll-padding-top: 2rem;
+  }
+  .main-content {
+    max-width: 85%;
+  }
+  .header-link-group {
+    display: none;
+  }
+  .heading--large {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+  .heading--medium {
+    font-size: 1.8rem;
+  }
+  .header {
+    height: 40px;
+  }
+  .header-logo {
+    height: 40px;
+  }
+  .text--extra-large {
+    font-size: 1.6rem;
+  }
+  .header-container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .header-menu-icon {
+    display: block;
+    position: absolute;
+    left: 20px;
+  }
+  .profile-image {
+    min-width: 200px;
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 38%;
+    border: 5px #000 solid;
+    background: black;
+    box-shadow: 0px 0px 71px #000;
+  }
+  .intro-card-text {
+    padding: 0 15px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 400;
+    text-align: center;
+  }
+  .side-by-side {
+    display: flex;
+    flex-direction: column;
+  }
+  .side-by-side-image {
+    width: 100%;
+  }
+  .side-by-side-text {
+    width: 100%;
+  }
+  .side-by-side-text p {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .summary-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .summary-heading {
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+  }
+  .summary-description {
+    display: flex;
+    margin: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .main-content {
+    max-width: 280px;
+  }
+  .text {
+    font-size: 1rem;
+  }
+  .text-bold {
+    font-size: 1rem;
+  }
+  .numbered-list {
+    font-size: 1rem;
+  }
+  .heading--large {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+  .heading--medium {
+    font-size: 1.5rem;
+  }
+  .profile-image {
+    min-width: 150px;
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 38%;
+    border: 5px #000 solid;
+    background: black;
+    box-shadow: 0px 0px 71px #000;
+  }
+  .intro-card-text {
+    padding: 0 15px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    font-weight: 400;
+    text-align: center;
+  }
+  .developer-hub-image {
+    border-radius: 0px;
+  }
+  .user-feedback-legend {
+    font-size: 1rem;
+  }
+  .side-by-side {
+    display: flex;
+    flex-direction: column;
+  }
+  .side-by-side-image {
+    width: 100%;
+  }
+  .side-by-side-text {
+    width: 100%;
+  }
+  .side-by-side-text p {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .text--extra-large {
+    font-size: 1.5rem;
+  }
 }
