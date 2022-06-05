@@ -143,33 +143,43 @@
         <!-- Case Study 1 -->
         <h2 class="heading--medium" id="case-study-1">Upgraded multiple services & fixed their accessibility issues</h2>
         <p class="text">
-          I was brought onto a HMRC team that had their complete service accessibility tested and failed to meet standards. This was a big service made up of around 8 repositories 
-          that all used the old frontend libraries. The frontend code its self was written by backend developers with no experience in frontend development, they had used the 
-          old frontend library as guidance. I made a case to the design lead and project manager that the services needed to be upgraded to the latest Government Digital Service 
-          (GDS) Design System components in order to be more accessible. Originally there was push back from the design team since the upgrade meant visual changes. However I convinced 
-          them it was for the greater good as the newer components had been designed with accessibility in mind unlike the older ones. Teaching them how the likes of screen readers work
-          and how switching to the new frontend library would benefit these and overall improve the user experience.
+          I was brought onto a HMRC team that had their complete service accessibility tested and failed to meet accessibility standards. This was a huge concern for the project 
+          leads as it was a legal requirement for the services to meet the WCAG 2.1 requirement. The service was made up of around 8 repositories that all used the old frontend 
+          libraries. The frontend code its self was written by backend developers with no experience in frontend development. They had used the old frontend library as their 
+          only guidance which meant the frontend code wasn’t up to standard and it hadn’t been coded with accessibility in mind.
         </p>
         <p class="text">
-          I was given the task to upgrade all the repositories and to do a complete rebuild using the new frontend libraries. While doing this I would need to assess any 
-          accessibility failures that needed addressing before the services went for a retest. One of the challenges I was facing was multiple developers were working in these 
-          repositories which meant I had to keep constant communications with the other developers about what was being worked on. If I failed to do this then it would lead to 
+          Before I got started, I made a case to the design lead and project manager that the services needed to be upgraded to the latest Government Digital Service (GDS) 
+          Design System components in order to be more accessible. I suggested this as the older frontend components either had bad contrasting colours, used incorrect HTML 
+          e.g using the wrong heading tags, tables with no captions or inputs without labels. And even small things such as components using tables when they could have been 
+          detailed lists or summary lists. All these issues were part of the reason the service failed its accessibility test. Originally there was push back from the design team 
+          since the upgrade meant visual changes. However I convinced them it was for the greater good as the newer components had been designed with accessibility in mind. 
+          Unlike the older components which made it harder for screen reader to communicate what was presented on the screen or could have made components harder view for people 
+          with sight issues. I convinced them by setting up sessions to teach them how the likes of assisted technology work and how switching to the new frontend library would 
+          benefit any disabled users, in turn improving the user experience.
+        </p>
+        <p class="text">
+          I was set out with the task to upgrade all the repositories and to do a complete rebuild using the new frontend library components. While doing this I would need to 
+          assess any accessibility failures that would need addressing before the services went for a retest. One of the challenges I was facing was multiple developers were 
+          working in these repositories which meant communication was key with the other developers about what was being worked on. If I failed to do this then it would lead to 
           many conflicts as I was rewriting the frontend pages.
         </p>
         <p class="text">
-          I started off by breaking the repositories into phases to make it easier for code reviews, more feasible to communicate what sections were being working on and to 
-          make it manage-able for our tester to test the upgrades. In each phase I upgraded the project to use the new frontend libraries, re-wrote the code to use the new components, 
-          cleaned the frontend code and ensured each page met the WCAG requirements. During this process I worked closely with the lead designer as there was slight differences in 
-          visuals between the old frontend library and the new. Additionally there were cases where the old components were bad for user experience so I raised these issues with 
-          the lead designer and worked along side them to improve them using the newer GDS Design System components. Once each phase was complete, I set up meetings with the lead 
-          designer, product manager and tester to demo the new upgraded screens with the purpose of gathering feedback. Once the screens were signed off, the phases were sent to the 
-          tester where I made sure I was available for any questions they had. During each phase I was always planning in advance about what I was upgrading in the next phase. Making 
-          sure I was communicating this information using our dev channels and sprint plannings.
+          I started off by breaking the repositories into phases to make it easier for code reviews, more feasible to communicate what sections were being working on and to make 
+          it manage-able for our tester to test the upgrades. In each phase I upgraded the project to use the new frontend libraries, re-wrote the code to use the new components, 
+          cleaned the frontend code and ensured each page met the WCAG 2.1 requirements. During this process I worked closely with the lead designer as there was slight 
+          differences in visuals between the old frontend library and the new. Additionally there were cases where the old components were bad for user experience so I raised 
+          these issues with the lead designer and worked along side them to improve them, using the newer GDS Design System components. Once each phase was complete, I set up 
+          meetings with the lead designer, product manager and tester to demo the new upgraded screens with the purpose of gathering feedback. Once the screens were signed off, 
+          the phases were sent to the tester where I made sure I was available for any questions they had. During each phase I was always planning in advance about what I was 
+          upgrading in the next phase. Making sure I was communicating this information using our dev channels and sprint plannings so we could plan the work with the least 
+          amount of conflict.
         </p>
-        <img src="./Assets/Images/developer-hub.png" class="developer-hub-image" alt="Picture of Ryan Garrett">
+        <img src="./Assets/Images/developer-hub.png" class="developer-hub-image" alt="Developer Hub home screen">
         <p class="text">
-          The team have just started sending the repositories for a retest with the accessibility teams. The smaller repositories were sent first where they are successfully 
-          passing the accessibility tests and the new-ish look is getting positive feedback across the board.
+          The team have just started sending the repositories for a retest with the accessibility team. The smaller repositories were sent first where they are successfully 
+          passing the accessibility tests which means we are hitting the legal requirement due to the work I have done. The service its-self has been deployed where it’s being 
+          used by 14,000 registered users. The new-ish look is getting positive feedback across the board.
         </p>
 
         <fieldset class="user-feedback-box">
@@ -192,15 +202,16 @@
         <!-- Case Study 2 -->
         <h2 class="heading--medium">Helped develop service prototypes</h2>
         <p class="text">
-          Since we were moving the services from the old frontend libraries to the newer frontend, I noticed all the UI prototypes were using the old frontend components 
-          and not the new ones. I raised this as an issue as in the upgraded frontend there are slight visual differences with the newer components compared to the old. This could 
-          have caused issues say when user testing, it wouldn't have provided accurate feedback for our newer upgraded services. It could also lead to confusion when demo'ing to 
-          the developers on how the design team want pages to be presented, compared to what would actually be produced on the newer upgraded frontend.
+          Since we were moving the services from the old frontend libraries to the newer frontend, I noticed all the UI prototypes were using the old frontend components and 
+          not the new ones. I raised this issue as in the upgraded frontend there are slight visual differences with the components compared to the old ones. For example there 
+          was a page in the prototype which used an old component, a on/off toggle whereas that component didn’t exist in the new GDS component library. This could have caused 
+          issues say when user testing, it wouldn’t have provided accurate feedback for our newer upgraded service. It could also lead to confusion when demo’ing the prototype 
+          to the developers on how the design team want pages to be presented. As the developers would be working with components that may not exist or look vastly different.
         </p>
         <p class="text">
-          After raising this issue, I was instructed to replicate the old prototypes in a new repository with the latest Government Digital Service (GDS) Design System components. 
-          This all had to be complete before the next round of user testing as the design team wanted to use the new screens to get more accurate feedback. I also had the additional 
-          task of up skilling a HMRC apprentice in frontend.
+          After raising this issue, I was instructed to replicate the old prototypes in a new repository with the latest GDS Design System components. This all had to be complete 
+          before the next round of user testing as the design team wanted to use the new screens to get more accurate feedback. I also had the additional task of up skilling a 
+          HMRC apprentice in frontend e.g HTML, CSS, Javascript (JS) and accessibility.
         </p>
         <div class="side-by-side">
           <div class="side-by-side-image">
@@ -209,12 +220,13 @@
           <div class="side-by-side-text">
             <p class="text">
               With deadlines in mind, I delegated the work out between me and the apprentice. We started off pair programming so that I could teach them how to write correct 
-              HTML, CSS & JS that met coding standards. Once they picked up suitable knowledge, we split off to work on our own screens so that we were working efficiently 
-              to meet the deadline. On some of the screens that were assigned to me, there were a couple of complicated components to recreate which I had to combine a 
-              mixture of the GDS Design System components while keeping it fully accessible. I set up regular code reviews and demo's to give constant feedback to the apprentice that 
-              helped them learn and grow in the frontend world. This allowed them to pick up more difficult tasks that also helped the work load on me. Since the prototypes could be a 
-              source for the backend developers to copy frontend code from, I wanted to make sure the prototype was fully accessibile too. To do this I set up a meeting with the 
-              apprentice/Lead designer and taught them how to use tools like WAVE to test their code in browser.
+              HTML, CSS & JS that met coding standards. Once they picked up suitable knowledge, we split off to work on our own screens so that we were working efficiently to 
+              meet the deadline. On some of the screens that were assigned to me, there were a couple of complicated components to recreate such as search bars with filters or 
+              tables with pagination. To build these I had to combine a mixture of the new GDS Design System components while keeping it fully accessible. When I wasn’t working 
+              on my own screens I set up regular code reviews and demo’s to give constant feedback to the apprentice that helped them learn and grow in the frontend world. This 
+              allowed them to pick up more difficult tasks that also helped the work load on me. Since the prototypes could be a source for the backend developers to copy 
+              frontend code from, I wanted to make sure the prototype was fully accessibility too. To do this I also set up a meetings with the apprentice/Lead designer and 
+              taught them how to use tools like WAVE to test their code in browser.
             </p>
           </div>
         </div>
@@ -240,25 +252,31 @@
         <!-- Case Study 3 -->
         <h2 class="heading--medium">Lead frontend developer on a new HMRC catalog service</h2>
         <p class="text">
-          There was an ask for a new service to be built that cataloged API's for external and internal use. This was to hopefully improve peoples user journeys and make it easier for 
-          them to find API's. The service was to be designed and built from scratch.
+          HMRC wanted a new strategy to make finding information about API’s more accessible and easier to use for external and internal use. The current method was complicated 
+          and difficult for developers to locate and explore the different API’s for offer. This lead to an ask for a new service to be built that cataloged API’s to allow 
+          developers to freely search through them with the help of filters and to provide detailed information on how to use them. The goal was to hopefully improve peoples user 
+          journeys and make it easier for them to find API’s. The service was to be designed and built from scratch.
         </p>
         <p class="text">
-          Being the frontend developer lead on this project, I was brought onto the project at the start to work along side the lead designer to help develop the prototype for the new 
-          service. When the prototypes were complete I was to develop the frontend for this service with the help of the backend developers. I would have to code review all the 
-          frontend work to guarantee accessibility and code standards were being met.
+          Being the frontend developer lead on this project, I was brought onto the project at the start with the purpose of working along side the lead designer to help develop 
+          the prototype. Here I would need to provide component guidance, make changes based on user feedback and to ensure the prototypes were meeting the accessibility 
+          requirements. When the prototypes were complete, I was to develop the actual frontend for the service with the help of the backend developers. I would need to code 
+          review all the frontend work to guarantee accessibility and code standards were being met.
         </p>
         <p class="text">
-          To help maintain a fully accessible prototype that other developers could copy and use code from, I provided guidance to the lead designer in regular calls and 
-          review sessions. I found these sessions helpful for my own development as they would go away to learn more about WCAG/accessibility and then show me their findings 
-          through their work. It was important we got the prototype complete in a timely fashion as we needed to get it out in front of users testing sessions. To achieve this we set 
-          out to make re-useable components and CSS where we could. This also meant if there was a design change, we would only have to change it in 1 place. The new service was 
-          made up of custom components that had to be carefully built by me to ensure the accessibility needs were still being met. Once the prototype was complete, I took 
-          to the task of making sure what we built in the prototype was being transitioned over into the actual service and helping the backend developers where I could.
+          I co-built the prototype with the lead designer. We split the screens between us, working off story boards that had been built from requirements. To maintain the 
+          prototypes accessibility standards so that other developers could copy and use code from, I provided guidance to the lead designer in regular calls and review sessions. 
+          I found these sessions helpful for my own development as they would go away to learn more about WCAG/accessibility and then show me their findings through their work. 
+          It was important we got the prototype complete in a timely fashion as we needed to get it out in front of users testing sessions. To help achieve this we set out to 
+          make re-useable components and CSS where we could. This also meant if there was a design change, we would only had to change it in 1 place. The custom components in 
+          the new service were assigned to me so that they could be carefully built to ensure the accessibility needs were still being met. Once the prototype was complete, I 
+          took to the task of making sure what we built in the prototype was being transitioned over into the actual service and helping the backend developers where I could.
         </p>
         <p class="text">
-          The end result was we delivered and released the new service that passed its scheduled accessibility review with flying colours! The service also received good feedback from 
-          internal and external teams noting they found the service easier to find and locate API information.
+          The result of our efforts was we delivered and released the new service that held over 1000 API’s and it passed its scheduled accessibility review with flying colours! 
+          The service is now 1 year into public beta which is constantly evolving through user feedback. This would not have been possible if I didn’t manage to get it to meet 
+          the WCAG 2.1 legal requirements. The service has also received good feedback from internal and external teams, noting they found the service easier to find and locate 
+          API information. 
         </p>
         <fieldset class="user-feedback-box">
           <legend class="user-feedback-legend">User Feedback - Product manager</legend> 
